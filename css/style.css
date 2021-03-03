@@ -109,6 +109,52 @@ h6 {
   }
 }
 
+/* header-all */
+.header-all {
+  padding: 20px 0;
+  height: 72px;
+  position: absolute fixed;
+  background-color: #151f7a;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+}
+
+.header-all .logo-all {
+  float: left;
+  margin-left: 60px;
+}
+
+.header-all .logo-all h1 {
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+.header-all .logo-all a {
+  text-align: center;
+  color: white;
+  padding-top: 15px;
+}
+
+.header-all .logo-all a,
+.header-all .logo-all h1 a:hover {
+  color: #fff;
+  padding-left: 10px;
+}
+
+.header-all .logo-all img {
+  padding: 0;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -864,6 +910,59 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 /* end mengapa kami */
 
+/* profile */
+#profile img {
+  width: auto;
+  height: 200px;
+}
+/* profile */
+
+/* img produk */
+.img-produk {
+  margin-top: 50px;
+}
+.img-produk img {
+  width: auto;
+  height: 250px;
+}
+
+/* profile-company */
+.profile-company {
+  margin-top: 50px;
+}
+
+.profile-company img {
+  width: auto;
+  height: 150px;
+}
+
+.profile-company h3 {
+  font-size: 32px;
+  color: #000;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.profile-company h3::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #151f7a;
+  bottom: 0;
+  left: 0;
+}
+
+.profile-company p {
+  text-align: left;
+  color: #000;
+}
+/* end profile-company */
+
 /* Call To Action Section
 --------------------------------*/
 
@@ -973,10 +1072,73 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #d31f42;
 }
 
+/* form */
+
+#contact-form {
+  background-color: #fff;
+  padding: 60px 0;
+}
+#contact-form .form #sendmessage {
+  color: #151f7a;
+  border: 1px solid #151f7a;
+  display: none;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact-form .form #errormessage {
+  color: red;
+  display: none;
+  border: 1px solid red;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+#contact-form .form #sendmessage.show,
+#contact-form .form #errormessage.show,
+#contact-form .form .show {
+  display: block;
+}
+
+#contact-form .form .validation {
+  color: red;
+  display: none;
+  margin: 0 0 20px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+#contact-form .form input,
+#contact-form .form textarea {
+  padding: 10px 14px;
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 15px;
+}
+
+#contact-form .form button[type="submit"] {
+  background: #fff;
+  border: 1;
+  border-color: #151f7a;
+  border-radius: 12px;
+  padding: 10px 30px;
+  color: #151f7a;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#contact-form .form button[type="submit"]:hover {
+  background: #151f7a;
+  color: white;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-
 #footer {
   background: #151f7a;
   padding: 0 0 0 0;
