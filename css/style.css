@@ -655,12 +655,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   z-index: 10;
   margin-top: 30px;
-  margin-left: 15px;
 }
 
 #about .about-col {
   height: 350px;
-  width: 300px;
+  width: auto;
   background: #fff;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
@@ -736,10 +735,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #333;
   margin-bottom: 0;
   padding: 0 20px 20px 40px;
-}
-
-#about .visi-misi {
-  justify-content: center;
 }
 
 /* produk dan layanan */
@@ -1290,22 +1285,22 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-/* Portfolio Section
+/* card Section
 --------------------------------*/
 
-#portfolio {
+#card {
   padding: 60px 0;
   background-color: #151f7a;
 }
 
-#portfolio #portfolio-flters {
+#card #card-flters {
   padding: 0;
   margin: 5px 0 35px 0;
   list-style: none;
   text-align: center;
 }
 
-#portfolio #portfolio-flters li {
+#card #card-flters li {
   cursor: pointer;
   margin: 15px 15px 15px 0;
   display: inline-block;
@@ -1320,32 +1315,32 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: all 0.3s ease-in-out;
 }
 
-#portfolio #portfolio-flters li:hover,
-#portfolio #portfolio-flters li.filter-active {
+#card #card-flters li:hover,
+#card #card-flters li.filter-active {
   background: #18d26e;
   color: #fff;
 }
 
-#portfolio #portfolio-flters li:last-child {
+#card #card-flters li:last-child {
   margin-right: 0;
 }
 
-#portfolio .portfolio-wrap {
+#card .card-wrap {
   box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
 
-#portfolio .portfolio-wrap:hover {
+#card .card-wrap:hover {
   box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
 }
 
-#portfolio .portfolio-item {
+#card .card-item {
   position: relative;
   height: 360px;
   overflow: hidden;
 }
 
-#portfolio .portfolio-item figure {
+#card .card-item figure {
   background: #000;
   overflow: hidden;
   height: 240px;
@@ -1354,13 +1349,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0;
 }
 
-#portfolio .portfolio-item figure:hover img {
+#card .card-item figure:hover img {
   opacity: 0.4;
   transition: 0.3s;
 }
 
-#portfolio .portfolio-item figure .link-preview,
-#portfolio .portfolio-item figure .link-details {
+.noHover {
+  pointer-events: none;
+}
+
+#card .card-item figure .link-preview,
+#card .card-item figure .link-details {
   position: absolute;
   display: inline-block;
   opacity: 0;
@@ -1373,44 +1372,44 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.2s linear;
 }
 
-#portfolio .portfolio-item figure .link-preview i,
-#portfolio .portfolio-item figure .link-details i {
+#card .card-item figure .link-preview i,
+#card .card-item figure .link-details i {
   padding-top: 6px;
   font-size: 22px;
   color: #333;
 }
 
-#portfolio .portfolio-item figure .link-preview:hover,
-#portfolio .portfolio-item figure .link-details:hover {
+#card .card-item figure .link-preview:hover,
+#card .card-item figure .link-details:hover {
   background: #151f7a;
 }
 
-#portfolio .portfolio-item figure .link-preview:hover i,
-#portfolio .portfolio-item figure .link-details:hover i {
+#card .card-item figure .link-preview:hover i,
+#card .card-item figure .link-details:hover i {
   color: #fff;
 }
 
-#portfolio .portfolio-item figure .link-preview {
+#card .card-item figure .link-preview {
   left: calc(50% - 38px);
   top: calc(50% - 18px);
 }
 
-#portfolio .portfolio-item figure .link-details {
+#card .card-item figure .link-details {
   right: calc(50% - 38px);
   top: calc(50% - 18px);
 }
 
-#portfolio .portfolio-item figure:hover .link-preview {
+#card .card-item figure:hover .link-preview {
   opacity: 1;
   left: calc(50% - 44px);
 }
 
-#portfolio .portfolio-item figure:hover .link-details {
+#card .card-item figure:hover .link-details {
   opacity: 1;
   right: calc(50% - 44px);
 }
 
-#portfolio .portfolio-item .portfolio-info {
+#card .card-item .card-info {
   background: #fff;
   text-align: center;
   padding: 30px;
@@ -1418,7 +1417,17 @@ body.mobile-nav-active #mobile-nav-toggle {
   border-radius: 0 0 3px 3px;
 }
 
-#portfolio .portfolio-item .portfolio-info h4 {
+#card .card-item .legalitas-info {
+  display: flex;
+  text-align: center;
+  padding: 10px;
+  height: 70px;
+  border-radius: 0 0 3px 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+#card .card-item .card-info h4 {
   font-size: 22px;
   line-height: 1px;
   font-weight: 700;
@@ -1426,19 +1435,50 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-bottom: 0;
 }
 
-#portfolio .portfolio-item .portfolio-info h4 a {
+#card .card-item .card-info h4 a {
   color: #333;
 }
 
-#portfolio .portfolio-item .portfolio-info h4 a:hover {
+#card .card-item .card-info h4 a:hover {
   color: #151f7a;
 }
 
-#portfolio .portfolio-item .portfolio-info p {
+#card .card-item .card-info p {
   padding: 0;
   margin: 0;
   color: #b8b8b8;
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
+}
+
+#card .card-item .legalitas-info button {
+  background: #fff;
+  border: 0;
+  border-color: #151f7a;
+  border-radius: 12px;
+  padding: 10px 30px;
+  color: #151f7a;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+#card .card-item .legalitas-info button:hover {
+  background: #151f7a;
+  color: white;
+}
+
+#gc img {
+  height: 250px;
+  width: 350px;
+}
+
+#bp img {
+  height: 250px;
+  width: 350px;
+}
+
+#amp img {
+  height: 250px;
+  width: 350px;
 }
