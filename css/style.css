@@ -1,5 +1,5 @@
 body {
-  background: #fff;
+  background: #f7f7f7;
   color: #666666;
   font-family: "Montserrat", sans-serif;
 }
@@ -617,7 +617,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 32px;
   color: #fff;
   text-transform: uppercase;
-  text-align: left;
+  text-align: center;
   font-weight: 700;
   position: relative;
   padding-bottom: 15px;
@@ -631,7 +631,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   height: 3px;
   background: #fff;
   bottom: 0;
-  left: 0;
+  left: calc(50% - 20px);
 }
 
 .tentang-kami p {
@@ -834,7 +834,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #proyek {
-  background: #fff;
   padding: 60px 0;
 }
 
@@ -893,7 +892,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Services Section
 --------------------------------*/
 #services {
-  background: #fff;
   background-size: cover;
   padding: 60px 0 40px 0;
   margin-bottom: 40px;
@@ -999,7 +997,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #call-to-action {
-  background-color: #fff;
   background-size: cover;
   padding: 60px 0;
   margin: 20px;
@@ -1289,7 +1286,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #card {
-  padding: 60px 0;
+  padding: 30px 0;
   background-color: #151f7a;
 }
 
@@ -1457,10 +1454,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 0;
   border-color: #151f7a;
   border-radius: 12px;
-  padding: 10px 30px;
+  padding: 10px 20px;
   color: #151f7a;
   transition: 0.4s;
   cursor: pointer;
+  width: 90%;
+  height: 50px;
 }
 
 #card .card-item .legalitas-info button:hover {
