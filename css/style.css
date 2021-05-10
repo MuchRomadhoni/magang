@@ -155,6 +155,10 @@ h6 {
   height: 30px;
 }
 
+.headerNonIndex {
+  position: fixed;
+}
+
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -957,6 +961,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 /* profile-company */
+main {
+  margin-top: 140px;
+}
+
+#main1 {
+  margin-top: 0px;
+}
+
 .profile-company {
   margin-top: 50px;
 }
@@ -1104,7 +1116,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* form */
 
 #contact-form {
-  background-color: #fff;
   padding: 60px 0;
 }
 #contact-form .form #sendmessage {
